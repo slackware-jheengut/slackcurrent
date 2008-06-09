@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+            |-handy-ruler------------------------------------------------------|
+slackcurrent: slackcurrent
+slackcurrent:
+slackcurrent: Slackpkg tells you what packages in your Slackware box needs to
+slackcurrent: be upgraded to the latest packages (slackware-current). 
+slackcurrent: It writes and shows you the list of packages to be upgraded with
+slackcurrent: the full URL of their locations.
+slackcurrent:
+slackcurrent: It JUST do that. No dependencies, package installing or 
+slackcurrent: upgrading. Is up to you get the list and make what you want with
+slackcurrent: it.
+slackcurrent:
