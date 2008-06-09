@@ -713,6 +713,7 @@ def void(void):
 def header():
 	print "\nSlackcurrent "+__version__+" - Slackware current packages maintenance program"
 	print "This software is GPL. More about it on: http://slackcurrent.sf.net"
+	print "Get the latest code on http://github.com/taq/slackcurrent"
 	print "Current server is "+getserver(False)
 	print
 
