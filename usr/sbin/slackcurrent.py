@@ -400,7 +400,7 @@ def listinvalidremote(parms):
 def downloadremotelist():	
 	url = getserver()+"FILELIST.TXT"
 	print "Downloading\n",url
-	expr = re.compile("tgz$")
+	expr = re.compile("t[gx]z$")
 	pref = re.compile("^http|^ftp")
 	try:
 		if pref.search(url)!=None:
@@ -474,7 +474,7 @@ def upgrade(parms,testing=False):
 		
 		answer= raw_input("Do you want to see the list now on the screen? (y/N) ")
 		if string.upper(answer) == "Y":
-			expr = re.compile("tgz$")
+			expr = re.compile("t[gx]z$")
 			for i in [p for p in list if expr.search(p)!=None]: print i
 	except StandardError,e:
 		print "Could not create the file list."
@@ -526,7 +526,7 @@ def listnew(parms):
 	
 	answer= raw_input("Do you want to see the list now on the screen? (y/N) ")
 	if string.upper(answer) == "Y":
-		expr = re.compile("tgz$")
+		expr = re.compile("t[gx]z$")
 		for i in [p for p in new if expr.search(p)!=None]: print i
 
 """
@@ -582,8 +582,8 @@ def download_from(parms):
 	gl = []
 	nf = []
 
-	# we just want the .tgz files
-	tgz_regex = re.compile("tgz$")
+	# we just want the .t[gx]z files
+	tgz_regex = re.compile("t[gx]z$")
 
 	# check what package we need there and have there
 	for t in ll:
@@ -621,7 +621,7 @@ def download_from(parms):
 	Check the ASC packages signatures
 """
 def checksign(parms):
-	list  = glob.glob("*.tgz")
+	list  = glob.glob("*.t[gx]z")
 	list.sort()
 	for p in list:
 		print "checking",p
