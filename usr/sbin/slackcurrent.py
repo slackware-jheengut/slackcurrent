@@ -16,7 +16,7 @@ _slackcurrent_lowercase= [c for c in string.lowercase]
 
 # app data
 __author__ 	= "Eustaquio 'TaQ' Rangel (eustaquiorangel AT yahoo.com)"
-__version__	= "0.1.6"
+__version__	= "0.1.7"
 __date__		= "$Date: 2008/03/04 12:00:00$"
 
 # some paths
